@@ -1,0 +1,65 @@
+<%-include('header')%>
+    <h3 class="h3 text-center mt-3">REGISTRATION DETAILS</h3>
+
+    <div class="row">
+        <div class="col-md-2">
+            <%-include('left')%>
+
+        </div>
+        <div class="col-md-10">
+            <!-- <hr> -->
+            <div class="container">
+                <!-- <h1 class="h4 text-center mt-3">Registration Data</h4> -->
+                <hr>
+                <% if(data.length>0) { %>
+                    <table border="1">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover" name="/signup">
+
+                                <tr>
+                                    <td>id</td>
+                                    <td>Name</td>
+                                    <td>Email</td>
+                                    <td>Mobile</td>
+                                    <td>Pass</td>
+                                    <td>Confirm Pass</td>
+                                    <td>Actions</td>
+                                </tr>
+                                <% for(var i=0; i<data.length; i++) { %>
+                                    <tr>
+                                        <td>
+                                            <%= i %>
+                                        </td>
+                                        <td>
+                                            <%= data[i].nameUp %>
+                                        </td>
+                                        <td>
+                                            <%= data[i].emailUp %>
+                                        </td>
+                                        <td>
+                                            <%= data[i].mobileUp %>
+                                        </td>
+                                        <td>
+                                            <%= data[i].passUp %>
+                                        </td>
+                                        <td>
+                                            <%= data[i].cpassUp %>
+                                        </td>
+                                        <td>
+                                            <a href='/edit/<%= data[i]._id %>'><i class="fa-solid fa-pen-to-square"></i></a> |
+                                            <a href='/delete/<%= data[i]._id %>'><i class="fa-solid fa-trash"></i></a>
+                                            <!-- <a href='/show/<%= data[i]._id %>'>Show</a> -->
+                                        </td>
+                                    </tr>
+                                    <% } %>
+
+
+                            </table>
+                            <% } else { %>
+                                No Record Found
+                                <% } %>
+                        </div>
+            </div>
+
+        </div>
+    </div>

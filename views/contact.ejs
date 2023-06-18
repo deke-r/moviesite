@@ -1,0 +1,91 @@
+<!-- Header----------------------------------- -->
+
+<%-include('common/header')%>
+    <!-- Header----------------------------------- -->
+
+
+    <!-- Bannner---------------------------------- -->
+
+    <!-- Bannner---------------------------------- -->
+
+
+
+    <!-- Contact Us Form---------------------------- -->
+
+    <div class="container-fluid" style="background-color: rgb(244, 240, 240);">
+        <div class="row">
+            <div class="col-md-7">
+                <h6 class="form-h6">Write to us by filling in the form below</h6>
+                <form class="form" method="post" action="/contact">
+                    <div class="mb-3">
+                        <!-- <label for="Select" class="form-label">For Customer Queries</lab -->
+                        <select id="Select" class="form-select" name="slectC">
+                          <option>For Customer Queries</option>
+                          <option>For Business Enquiries</option>
+                          <option>For Media/Press Enquiries</option>
+                          <option>For Other Enquiries</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"><span style="color: red;">*</span>Name</label>
+                        <input type="text" name="nameC" class="form-control" id="InputName" placeholder="Please enter Your Name" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <!-- <div class="row"> -->
+                        <!-- <div class="col-md-6"> -->
+                        <label for="exampleInputEmail1" class="form-label"><span style="color: red;">*</span>Email</label>
+                        <input type="email" name="emailC" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Please enter Your Email">
+                    </div>
+                    <div class="mb-3">
+
+                        <!-- <div class="col-md-6"> -->
+                        <label for="exampleInputMobile" class="form-label"><span style="color: red;">*</span>Mobile Number</label>
+                        <input type="number" name="noC" class="form-control" id="InputMobile" placeholder="eg:882XXXXXXX">
+                        <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" name="msgC" id="Textarea" rows="3" placeholder="Type Message Here"></textarea>
+                    </div>
+
+
+
+
+                    <button type="submit" class="btn btn-secondary mb-5 w-25">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <h6 class="contact-h6">Contact Us</h6>
+                <div class="container pb-4" id="contact-2">
+                    <i class="fa-solid fa-location-dot mt-3">
+                        <span ml-2>A-66, 2nd & 3rd Floor,<br> sec-7, Dwarka, Ramphal Chowk Rd, <br>near Icici Bank, Block A, Palam Extension, Palam, New Delhi, Delhi 110077</span>
+                    </i>
+                    <!-- <div class="container-fluid" id="container-contact"> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+
+    <!-- Contact Us Form---------------------------- -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer-------------------------------------------- -->
+    <%-include('common/footer')%>
+        <!-- Footer-------------------------------------------- -->

@@ -1,0 +1,64 @@
+<%-include('header')%>
+    <h3 class="h3 text-center mt-3">Edit Prdoucts</h3>
+
+    <div class="row">
+        <div class="col-md-2">
+            <%-include('left')%>
+        </div>
+        <div class="col-md-8">
+            <hr>
+            <form method="post">
+                <div class="my-3">
+                    <label for="exampleInputEmail1" class="form-label">NAME </label>
+                    <input type="text" class="form-control" id="exampleInputNAME" aria-describedby="" name="nameP" value="<%= data.nameP %>">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">CAST NAMES</label>
+                    <input type="text" class="form-control" id="exampleInputNAME" aria-describedby="">
+                    <div id="emailHelp" class="form-text" name="castname" value="<%= data.castname %>"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputAbout" class="form-label">DATE</label>
+                    <input type="date" class="form-control" id="exampleInputAbout" name="date" value="<%= data.date %>">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputLink" class="form-label">INPUT URL</label>
+                    <input type="url" class="form-control" id="exampleInputLink" aria-describedby="">
+                    <div id="Link" class="form-text" name="url" value="<%= data.url %>"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">UPLOAD IMGs</label>
+                    <input class="form-control" type="file" id="formFile" name="img">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">ABOUT</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="about" value="<%= data.about %>"></textarea>
+                </div>
+                <!-- <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div> -->
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" name="radio">
+                    <label class="form-check-label" for="inlineRadio1">MOVIE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">EVENT</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">SPORTS</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio4">STREAM</label>
+                </div>
+                <div class="my-3">
+                    <button type="submit" class="btn btn-primary">ADD TO SITE</button>
+                </div>
+            </form>
+        </div>
+    </div>

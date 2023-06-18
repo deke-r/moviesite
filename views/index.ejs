@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header----------------------------------- -->
+    <!-- <div class="container"> -->
+    <%-include('common/header')%>
+        <!-- </div> -->
+        <!-- Header----------------------------------- -->
+
+        <!-- Main --------------------------------  -->
+
+
+
+
+        <!-- Carosuel--- -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/john whats.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/desktop-cropped.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mission whats.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Carosuel--- -->
+
+
+
+
+        <div class="d-flex flex-row  justify-content-evenly flex-wrap" id="movie-box">
+            <% if(data.length>0){%>
+                <% for (var i=0;i<data.length;i++){%>
+                    <div class="p-2">
+                        <div class="box" id="external-box" data-aos="fade-up">
+                            <a href="jodi" class="movie-link"><img src="<%=data[i].img %>" alt="img not found !" class="movie-img"></a>
+
+                            <div class="box" id="internal-box">
+                                <p><i class="fa-solid fa-star"></i> 9.6/10 &nbsp;39.8K Votes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <%}%>
+                        <%} else{%>
+                            No record found
+                            <%}%>
+
+        <div class="p-2">
+                 <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="fastx"><img src="img/fastx.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 9.8/10 &nbsp;180.7K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="galaxy"><img src="img/x8.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 9.4/10 &nbsp;10.6K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="johnwick"><img src="img/x12.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 9.9/10 &nbsp;600K Votes</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex flex-row  justify-content-evenly flex-wrap" id="movie-box">
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x3.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 8.5/10 &nbsp;59.8K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x4.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 7.3/10 &nbsp;23K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x5.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i>6.5/10 &nbsp;73K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x6.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 6.9/10 &nbsp;626 Votes </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row  justify-content-evenly flex-wrap" id="movie-box">
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x7.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 7/10 &nbsp;349 Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x1.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 9.5/10 &nbsp;15.8K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x9.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 9.1/10 &nbsp;7.7K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x10.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 8/10 &nbsp;1.3K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row  justify-content-evenly flex-wrap" id="movie-box">
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x11.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i>7.6/10 &nbsp;50.2K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x2.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 8.1/10 &nbsp;New Release</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x13.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 8.9/10 &nbsp;4.4K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x14.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 8.7/10 &nbsp;1.8K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row  justify-content-evenly flex-wrap" id="movie-box">
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x15.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 9.1/10 &nbsp;3.3K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x16.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 7.1/10 &nbsp;11K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x17.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 7.7/10 &nbsp;88.4K Votes</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="box" id="external-box" data-aos="fade-up">
+                    <a href="jodi"><img src="img/x18.jpg" alt="img not found !"></a>
+
+                    <div class="box" id="internal-box">
+                        <p><i class="fa-solid fa-star"></i> 5.5/10 &nbsp;New Release</p>
+
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+        
+
+
+
+
+ 
+
+
+
+
+        <!-- Main --------------------------------  -->
+
+
+
+
+
+
+
+        <!-- Footer-------------------------------------------- -->
+        <!-- <div class=" container-fluid "> -->
+        <%-include('common/footer')%>
+            <!-- </div> -->
+            <!-- Footer-------------------------------------------- -->
+
+</body>
+
+</html>

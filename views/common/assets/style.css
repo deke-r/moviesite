@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(51, 53, 57);
+}
+
+.nav-link {
+    color: white;
+}
+
+.imovie {
+    color: white;
+    cursor: pointer;
+}
+
+.form-control {
+    width: 30rem;
+}
+
+
+/* Footer---------------------- */
+
+.footer {
+    background-color: #404043;
+    height: 80px;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.footer-p {
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-logo {
+    width: 50rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.footer-logo-text {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#footer-container-two {
+    background-color: #333338;
+}
+
+.footer-h6 {
+    color: white;
+}
+
+.hr {
+    color: white;
+}
+
+.footer-icon {
+    color: white;
+    font-size: 3rem;
+}
+
+#footer-row-icon {
+    display: inline;
+}
+
+.footer-p a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Contact--------------------- */
+
+
+/* Form-- */
+
+.form-h6 {
+    padding-left: 15rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1280px) {
+    .form-h6 {
+        padding-left: 0rem;
+    }
+}
+
+.form {
+    padding-left: 15rem;
+}
+
+@media screen and (max-width: 1280px) {
+    .form {
+        padding-left: 0rem;
+    }
+}
+
+.form-select {
+    width: 40rem;
+    line-height: 1rem;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1080px) {
+    .form-select {
+        width: 100%;
+    }
+}
+
+.form-label {
+    font-size: 0.8rem;
+}
+
+#InputName {
+    width: 40rem;
+    height: 1.8rem;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1080px) {
+    #InputName {
+        width: 100%;
+    }
+}
+
+#InputEmail {
+    width: 40rem;
+    height: 1.8rem;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:978px) {
+    #InputEmail {
+        width: 100%;
+    }
+}
+
+#InputMobile {
+    width: 40rem;
+    height: 1.8rem;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:978px) {
+    #InputMobile {
+        width: 100%;
+    }
+}
+
+#Textarea {
+    width: 40rem;
+}
+
+@media screen and (max-width:978px) {
+    #Textarea {
+        width: 100%;
+    }
+}
+
+
+/* Form-- */
+
+.contact-h6 {
+    /* padding-top: 7rem; */
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    margin-left: 7rem;
+}
+
+@media screen and (max-width:500px) {
+    .contact-h6 {
+        margin-left: 0rem;
+    }
+}
+
+#contact-2 {
+    background-color: white;
+    /* border: 1px solid rebeccapurple; */
+    /* width: 20rem; */
+    /* height: 10rem; */
+    margin-right: 12rem;
+    border-radius: 4px;
+}
+
+
+/* @media screen and (max-width:968px) {
+    contact-2 {
+        margin-right: 0rem;
+    }
+} */
+
+#contact-2 i {
+    font-size: 1.5rem;
+}
+
+#contact-2 i span {
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Contact--------------------- */
+
+@media screen and (max-width: 600px) {
+    .form-control {
+        width: 100%;
+    }
+}
+
+
+/* Index------------------------------------------ */
+
+#movie-box {
+    margin: 5rem 0px 5rem 0px;
+}
+
+#external-box {
+    border: 1px solid red;
+    height: 350px;
+    width: 250px;
+    justify-content: center;
+    border-radius: 8px;
+    /* background-color: blue; */
+    position: relative;
+    margin: 0px 20px 20px 0px;
+}
+
+#internal-box {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top: 300px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+#internal-box p {
+    margin: 0.7rem 0px 0px 1.7rem;
+    color: white;
+}
+
+#internal-box i {
+    color: rgb(146, 3, 3);
+    font-size: 1.2rem;
+}
+
+
+/* Terms & Conditions ----------------- */
+
+
+/* Styling for the dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Styling for the dropdown button */
+
+.dropdown input {
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Styling for the dropdown content */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 1000px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Styling for the paragraphs inside the dropdown */
+
+.dropdown-content p {
+    color: #333;
+    padding: 10px;
+    margin: 0;
+}
+
+
+/* Show the dropdown content when the button is clicked */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 600px) {
+    .dropdown {
+        display: block;
+    }
+    .dropdown button {
+        width: 100%;
+    }
+    .dropdown-content {
+        position: static;
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content {
+        min-width: 250px;
+        overflow: scroll;
+    }
+}
+
+
+/* Book Page---------------------------------------------------------- */
+
+.banner {
+    background-image: url(image/jodi\ banner.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+iframe {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px white solid;
+}
+
+.text {
+    color: white;
+    margin-top: 15%;
+    text-align: start;
+    font-weight: bold;
+}
+
+.modal p {
+    font-weight: bold;
+}
+
+.modal h6 {
+    color: green;
+}
+
+#seats:hover {
+    width: 35px;
+    height: 35px;
+    background-color: red;
+    border-radius: 10%;
+}
+
+#rs {
+    color: green;
+}
+
+.actor {
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {}
+
+
+/* display 4 */
+
+@media (min-width: 768px) {}
+
+
+/* Book Page---------------------------------------------------------- */

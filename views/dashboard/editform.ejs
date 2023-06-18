@@ -1,0 +1,24 @@
+<%-include('header')%>
+    <h3 class="h3 text-center mt-3">Edit Registration</h3>
+
+    <div class="row">
+        <div class="col-md-2">
+            <%-include('left')%>
+        </div>
+        <div class="col-md-10">
+            <hr>
+            <form method="post" action="">
+                <input type="text" placeholder=" Name" name="nameUp" value="<%= data.nameUp %>" required>
+                <input type="email" placeholder=" Email" name="emailUp" value="<%= data.emailUp %>" required>
+                <input type="number" placeholder=" Mobile No" name="mobileUp" value="<%= data.mobileUp %>" required>
+
+                <input type="text" placeholder=" Password" name="passUp" value="<%= data.passUp %>" required>
+                <input type="text" placeholder=" Confirm Password" name="cpassUp" value="<%= data.cpassUp %>" required>
+
+
+
+                <input type="submit">
+            </form>
+        </div>
+
+    </div>

@@ -1,0 +1,72 @@
+<%-include('header')%>
+    <h3 class="h3 text-center mt-3">CONTACT DATA</h3>
+
+    <div class="row">
+        <div class="col-md-2">
+            <%-include('left')%>
+
+        </div>
+        <div class="col-md-10">
+            <!-- <h4 class="h4 text-center mt-3">Contact Details</h4> -->
+            <hr>
+            <section class="intro">
+                <!-- <div class="gradient-custom-1 h-100"> -->
+                <div class="mask d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <% if(data.length>0) { %>
+                                    <table border="1">
+                                        <div class="table-responsive bg-white">
+                                            <table class="table mb-0" name="/contact">
+                                                <tr>
+                                                    <td>Id</td>
+                                                    <td>Name</td>
+                                                    <td>Email</td>
+                                                    <td>Number</td>
+                                                    <td>Message</td>
+                                                    <td>Actions</td>
+
+                                                </tr>
+                                                <% for(var i=0; i<data.length; i++) { %>
+                                                    <tr>
+                                                        <td>
+                                                            <%= i %>
+                                                        </td>
+                                                        <!-- <td>
+                                                            <%= data[i].selectC %>
+                                                        </td> -->
+                                                        <td>
+                                                            <%= data[i].nameC %>
+                                                        </td>
+                                                        <td>
+                                                            <%= data[i].emailC %>
+                                                        </td>
+                                                        <td>
+                                                            <%= data[i].noC %>
+                                                        </td>
+                                                        <td>
+                                                            <%= data[i].msgC %>
+                                                        </td>
+                                                        <td>
+                                                            <a href='/edit_contact/<%= data[i]._id %>'><i class="fa-solid fa-pen-to-square"></i></a> |
+                                                            <a href='/delete_contact/<%= data[i]._id %>'><i class="fa-solid fa-trash"></i></a>
+                                                            <!-- <a href='/show/<%= data[i]._id %>'>Show</a> -->
+                                                        </td>
+                                                    </tr>
+                                                    <% } %>
+
+                                            </table>
+                                            <% } else { %>
+                                                No Record Found
+                                                <% } %>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+
+    </div>
